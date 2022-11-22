@@ -13,9 +13,9 @@
     </style>
   </head>
   <body>
-  <form action="{{ route('salvar_vaga') }}" method="post">
+        <form action="{{ route('salvar_vaga') }}" method="post">
             @csrf
-            <div><label for="nome">empresa_nome</label><input  type="text" name="empresa_nome" id="empresa_nome"></div>
+            <div><label for="empresa_nome">empresa_nome</label><input  type="text" name="empresa_nome" id="empresa_nome"></div>
             <div><label for="cargo">cargo</label><input  type="text" name="cargo" id="cargo"></div>
             <div><label for="salario">salario</label><input  type="text" name="salario" id="salario"></div>
             <div><label for="periodo">periodo</label><input  type="text" name="periodo" id="periodo"></div>
