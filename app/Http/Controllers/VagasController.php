@@ -19,4 +19,17 @@ class VagasController extends Controller
         ]);
          return "Vaga salva com sucesso";
     }
-}
+    public function show(){
+        $vagas = vagas::all();
+        return view('vagas.todos',['vagas' => $vagas]);
+    }
+    public function destroy($id){
+        $vagas=vagas::find0rFail($id);
+        $vagas->delete();
+        return "Vaga excluida com sucesso";
+    }
+    public function edit ($id){
+        $vagas = vagas::find0rFail($id);
+        return view('vagas.editar', ['vagas' => $vagas]);
+    }
+} 

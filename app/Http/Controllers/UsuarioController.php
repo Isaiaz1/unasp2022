@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\usuario;
 
 class UsuarioController extends Controller
 {
@@ -13,6 +14,7 @@ class UsuarioController extends Controller
         usuario::create([
             'nome' => $request->nome,
             'email' => $request->email,
+            'senha' => $request->senha,
             'telefone' => $request->telefone,
             'endereco' => $request->endereco,
             'resumo_profissional' => $request->resumo_profissional,

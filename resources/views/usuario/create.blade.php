@@ -13,12 +13,13 @@
     </style>
   </head>
   <body>
-        <form>
+        <form action="{{ route('salvar_usuario') }}" method="post">
             @csrf
             <div><label for="nome">nome</label><input  type="text" name="nome" id="nome"></div>
             <div><label for="email">email</label><input  type="text" name="email" id="email"></div>
+            <div><label for="senha">senha</label><input  type="text" name="senha" id="senha"></div>
             <div><label for="telefone">telefone</label><input  type="text" name="telefone" id="telefone"></div>
-            <div><label for="endereço">endereço</label><input  type="text" name="endereço" id="endereço"></div>
+            <div><label for="endereco">endereco</label><input  type="text" name="endereco" id="endereco"></div>
             <div><label for="resumo_profissional">resumo_profissional</label><input  type="text" name="resumo_profissional" id="resumo_profissional"></div>
             <button type="submit">Salvar</button>
         </form>

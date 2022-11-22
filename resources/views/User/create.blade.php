@@ -13,7 +13,7 @@
     </style>
   </head>
   <body>
-        <form>
+        <form action="{{ route('salvar_user') }}" method="post">
             @csrf
             <div><label for="email">email</label><input  type="text" name="email" id="email"></div>
             <div><label for="senha">senha</label><input  type="text" name="senha" id="senha"></div>

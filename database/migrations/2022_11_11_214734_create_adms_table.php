@@ -13,12 +13,12 @@ class CreateAdmsTable extends Migration
      */
     public function up()
     {
-        Schema::create('adms', function (Blueprint $table) {
+        Schema::create('adm', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
             $table->string('email');
             $table->string('senha');
-            $table->string('telefone');
+            $table->int('telefone');
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ class CreateAdmsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('adms');
+        Schema::dropIfExists('adm');
     }
 }

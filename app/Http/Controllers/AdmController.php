@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\adm;
 
 class AdmController extends Controller
 {
@@ -14,7 +15,7 @@ class AdmController extends Controller
             'nome' => $request->nome,
             'email' => $request->email,
             'senha' => $request->senha,
-            'idioma' => $request->idioma,
+            'telefone' => $request->telefone,
         ]);
          return "Adm salvo com sucesso";
     }
